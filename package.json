@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "compile": "node out/compile.js",
+    "debug": "node --watch out/compile.js",
+    "watch": "tsc --build --watch"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "latest"
+  }
+}
