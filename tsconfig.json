@@ -3,6 +3,7 @@
     "jsx": "react",
     "module": "NodeNext",
     "outDir": "out",
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "sourceRoot": "src",

@@ -1,41 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { Text, View } from '@react-pdf/renderer';
 
-const styles = StyleSheet.create({
-  content: {
-    fontSize: 11
-  },
-  subtitle: {
-    display: 'flex',
-    flexDirection: 'row',
-    fontSize: 12,
-    marginTop: 5
-  },
-  title: {
-    fontSize: 14,
-    backgroundColor: '#333',
-    padding: 5,
-    color: '#fff',
-    marginBottom: 5
-  }
-});
+import styles from './styles.js';
 
 export function Skills() {
   return (
     <View>
-      <Text style={styles.title}>Skills</Text>
-      <View style={styles.content}>
-        <Text>Languages</Text>
-        <Text>TypeScript, JavaScript, Java,</Text>
-        <Text>Python, Kotlin, C++, C, PHP, C#</Text>
-        <Text>Frameworks</Text>
-        <Text>AngularJS, React, Electron,</Text>
-        <Text>Express, Backbone, Ionic, Gatsby</Text>
-        <Text>Utilities</Text>
-        <Text>Git, Firebase, GraphQL, ChartIQ</Text>
-        <Text>Project Management</Text>
-        <Text>Agile, Waterfall, Kanban, Jira</Text>
-      </View>
+      <Text style={styles.contentTitle}>Skills</Text>
+      <Text style={styles.contentSubtitle}>Languages</Text>
+      <Text style={styles.contentText}>TypeScript, JavaScript, Java, Python, Kotlin, C++, C, PHP, C#</Text>
+      <Text style={styles.contentSubtitle}>Frameworks</Text>
+      <Text style={styles.contentText}>AngularJS, React, Electron, Express, Backbone, Ionic, Gatsby</Text>
+      <Text style={styles.contentSubtitle}>Utilities</Text>
+      <Text style={styles.contentText}>Git, Firebase, GraphQL, ChartIQ</Text>
+      <Text style={styles.contentSubtitle}>Project Management</Text>
+      <Text style={styles.contentText}>Agile, Waterfall, Kanban, Jira</Text>
     </View>
   );
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Document, Page, StyleSheet, View } from '@react-pdf/renderer';
+import { Document, Page, View } from '@react-pdf/renderer';
 
 import { Header } from './sections/header.js';
-import { Experience } from './sections/experience.js';
+import { Experiences } from './sections/experiences.js';
 import { Projects } from './sections/projects.js';
 import { Education } from './sections/education.js';
 import { Skills } from './sections/skills.js';
@@ -16,14 +16,14 @@ export function Resume() {
         <Header/>
         <View style={{ display: 'flex', flexDirection: 'row' }}>
           <View style={{ width: '70%' }}>
-            <Experience/>
-            <Projects/>
-            <Education/>
+            <Experiences/>
+            <References/>
           </View>
           <View style={{ width: '30%' }}>
+            <Education/>
             <Skills/>
+            <Projects/>
             <Achievements/>
-            <References/>
           </View>
         </View>
       </Page>
