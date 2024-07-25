@@ -26,6 +26,12 @@ Compile (Watch)
   npm run debug
 ```
 
+### View Resume
+**On MacOS**
+```sh
+  open -a "Google Chrome" resume.pdf
+```
+
 ### Environment Variables
 PERSONAL_ADDRESS
 PERSONAL_PHONE
