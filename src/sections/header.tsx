@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View, Link } from '@react-pdf/renderer';
 import process from 'node:process';
+import { Redaction } from './redaction.js';
 
 const styles = StyleSheet.create({
   careerContainer: {
@@ -54,13 +55,21 @@ export function Header() {
         <Text style={styles.career}>Software Engineer</Text>
       </View>
       <View style={styles.links}>
-        <Text style={styles.link}>{process.env.PERSONAL_ADDRESS}</Text>
+        <Text style={styles.link}>
+          {process.env.PERSONAL_ADDRESS ?? <Redaction characters={20} color="#fff"/>}
+        </Text>
         <Text>&nbsp;|&nbsp;</Text>
-        <Text style={styles.link}>{process.env.PERSONAL_PHONE}</Text>
+        <Text style={styles.link}>
+          {process.env.PERSONAL_PHONE ?? <Redaction characters={20} color="#fff"/>}
+        </Text>
         <Text>&nbsp;|&nbsp;</Text>
-        <Link style={styles.link}>{process.env.PERSONAL_EMAIL}</Link>
+        <Link style={styles.link}>
+          {process.env.PERSONAL_EMAIL ?? <Redaction characters={20} color="#fff"/>}
+        </Link>
         <Text>&nbsp;|&nbsp;</Text>
-        <Link style={styles.link}>{process.env.PERSONAL_WEBSITE}</Link>
+        <Link style={styles.link}>
+          {process.env.PERSONAL_WEBSITE ?? <Redaction characters={20} color="#fff"/>}
+        </Link>
       </View>
     </View>
   );

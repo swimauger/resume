@@ -1,5 +1,5 @@
 import React from 'react';
-import { Document, Page, View } from '@react-pdf/renderer';
+import { Document, Page, StyleSheet, View } from '@react-pdf/renderer';
 
 import { Header } from './sections/header.js';
 import { Experience } from './sections/experience.js';

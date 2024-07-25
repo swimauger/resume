@@ -4,7 +4,7 @@ import process from 'node:process';
 import { pipeline } from 'node:stream/promises';
 import ReactPDF from '@react-pdf/renderer';
 
-process.loadEnvFile();
+if (fs.existsSync('.env')) process.loadEnvFile();
 
 import { Resume } from './resume.js';
 
