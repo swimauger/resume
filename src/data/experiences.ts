@@ -4,7 +4,7 @@ export default [
     "role": "Software Engineer II",
     "ventures": [
       "TypeScript, React, NestJS, Python, C++, Java, MySQL, GCP, AWS, Agile, Terraform, Concourse, Jenkins, Jest, Playwright",
-      "Developed the reporting system of three of Tempus' first new assays in over three years.",
+      "Developed the reporting system for three new assays in the course of just 1-2 years.",
       "Marked as a SME (Subject Matter Expert) for the development of the reporting system for the first FDA approved assay by Tempus.",
       "Automated numerous workflows for variant science, pathology, and clinical trials.",
       "Enhanced clinical report load times, saving scientists ~15 minutes daily via C++ WebKit bindings and caching.",

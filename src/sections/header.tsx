@@ -19,11 +19,11 @@ export function Header() {
           {process.env.PERSONAL_PHONE ?? <Redaction characters={20} color="#fff"/>}
         </Text>
         <Text>&nbsp;|&nbsp;</Text>
-        <Link>
+        <Link style={styles.headerLink}>
           {process.env.PERSONAL_EMAIL ?? <Redaction characters={20} color="#fff"/>}
         </Link>
         <Text>&nbsp;|&nbsp;</Text>
-        <Link>
+        <Link style={styles.headerLink}>
           {process.env.PERSONAL_WEBSITE ?? <Redaction characters={20} color="#fff"/>}
         </Link>
       </View>

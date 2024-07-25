@@ -18,11 +18,5 @@ export default [
     "relation": "Manager",
     "company": "Trading Technologies, Inc.",
     "email": process.env.TRADING_TECHNOLOGIES_MANAGER_EMAIL
-  },
-  {
-    "name": process.env.GOOGLE_BROTHER_NAME,
-    "relation": "Brother",
-    "company": "Google",
-    "email": process.env.GOOGLE_BROTHER_EMAIL
   }
 ]

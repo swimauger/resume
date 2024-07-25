@@ -15,15 +15,13 @@ export function Resume() {
       <Page size="A4">
         <Header/>
         <View style={{ display: 'flex', flexDirection: 'row' }}>
-          <View style={{ width: '70%' }}>
+          <View style={{ width: '68%' }}>
             <Experiences/>
-            <References/>
           </View>
-          <View style={{ width: '30%' }}>
-            <Education/>
+          <View style={{ width: '32%' }}>
             <Skills/>
             <Projects/>
-            <Achievements/>
+            <References/>
           </View>
         </View>
       </Page>
