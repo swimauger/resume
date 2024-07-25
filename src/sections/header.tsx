@@ -3,7 +3,7 @@ import { Text, View, Link } from '@react-pdf/renderer';
 import process from 'node:process';
 
 import { Redaction } from './redaction.js';
-import { styles } from './styles.js';
+import styles from './styles.js';
 
 export function Header() {
   return (
